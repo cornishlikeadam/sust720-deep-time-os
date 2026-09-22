@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "sust720-deep-time-os",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

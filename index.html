@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUST 720: Designing in Deep Time — The Palace of Deep Time OS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="versailles-theme">
+  <!-- Ambient Golden Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <div class="palace-frame">
+    <!-- Gilded Imperial Header -->
+    <header class="royal-header">
+      <div class="royal-crest-section">
+        <div class="fleur-de-lis-crest">
+          <svg class="crest-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5 C45 25 30 35 30 50 C30 65 42 70 50 95 C58 70 70 65 70 50 C70 35 55 25 50 5 Z" fill="url(#goldGrad)" stroke="#ffd700" stroke-width="1.5"/>
+            <path d="M50 45 C35 45 10 38 12 60 C14 75 35 72 45 80 C40 68 38 55 50 45 Z" fill="url(#goldGrad)" stroke="#ffd700" stroke-width="1.5"/>
+            <path d="M50 45 C65 45 90 38 88 60 C86 75 65 72 55 80 C60 68 62 55 50 45 Z" fill="url(#goldGrad)" stroke="#ffd700" stroke-width="1.5"/>
+            <circle cx="50" cy="50" r="4" fill="#fff" stroke="#d4af37" stroke-width="2"/>
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fff2a8"/>
+                <stop offset="40%" stop-color="#d4af37"/>
+                <stop offset="75%" stop-color="#aa771c"/>
+                <stop offset="100%" stop-color="#5a3e0b"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="royal-titles">
+          <div class="crown-supertitle">SAVANNAH COLLEGE OF ART AND DESIGN • M.A. / M.F.A. SUSTAINABLE DESIGN</div>
+          <h1 class="palace-title">THE PALACE OF DEEP TIME</h1>
+          <div class="course-subtitle-gold">SUST 720: Designing in Deep Time • Capstone Deliverable & AI Governance OS</div>
+        </div>
+      </div>
+
+      <div class="sun-king-chronometer">
+        <div class="chronometer-dial">
+          <div class="sunburst-icon">☀️</div>
+          <div class="dial-data">
+            <span class="dial-label">CHRONO-SPHERE HORIZON</span>
+            <span class="dial-value">2026 ➔ 2526 CE</span>
+            <span class="dial-sub">500-YEAR REGENERATIVE SUCCESSION</span>
+          </div>
+        </div>
+        <div class="decree-badge">
+          <span class="wax-seal">⚜️</span>
+          <div class="decree-text">
+            <strong>GOVERNANCE ACTIVE</strong>
+            <span>Updated Sept 17, 2026 • Assistance Line Enforced</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Neoclassical Gallery Navigation -->
+    <nav class="royal-gallery-nav">
+      <button class="gallery-tab active" data-tab="tab-map">
+        <span class="tab-flourish">I</span>
+        <span class="tab-label">Course Map (5 Steps)</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-stakeholder">
+        <span class="tab-flourish">II</span>
+        <span class="tab-label">Stakeholders & Missing Person (Step 1)</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-bounded">
+        <span class="tab-flourish">III</span>
+        <span class="tab-label">Bounded Question & Ethics (Step 2)</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-evidence">
+        <span class="tab-flourish">IV</span>
+        <span class="tab-label">Evidence Cards & Critique (Step 3)</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-assistance">
+        <span class="tab-flourish">V</span>
+        <span class="tab-label">The Assistance Line (Step 4)</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-trace">
+        <span class="tab-flourish">VI</span>
+        <span class="tab-label">Peer Trace Test</span>
+      </button>
+      <button class="gallery-tab highlight-tab" data-tab="tab-transparency">
+        <span class="tab-flourish">VII</span>
+        <span class="tab-label">Transparency Log & Guide</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-sandbox">
+        <span class="tab-flourish">VIII</span>
+        <span class="tab-label">Deep Time Simulator</span>
+      </button>
+      <button class="gallery-tab" data-tab="tab-storybook" style="border-bottom-color: #ffd700;">
+        <span class="tab-flourish">IX</span>
+        <span class="tab-label">📖 The Storybook (Ages 10+)</span>
+      </button>
+    </nav>
+
+    <!-- Main Palace Workspace -->
+    <main class="palace-main">
+
+      <!-- ======================================================== -->
+      <!-- TAB 1: COURSE MAP & BOUNDARIES -->
+      <!-- ======================================================== -->
+      <section id="tab-map" class="palace-pane active">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT I</span>
+            <h2>The Hall of Mirrors : Visual Course Map & Boundary Matrix</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">
+              Course Activity: <strong>Developing a 500-Year Anti-Fragile Regenerative System & Generational Ethics Charter</strong>
+            </p>
+          </div>
+
+          <div class="gilded-controls">
+            <div class="royal-filter-pendant">
+              <span class="pendant-label">Boundaries:</span>
+              <button class="rf-btn active" data-filter="all">All Layers</button>
+              <button class="rf-btn btn-ai" data-filter="ai">🟡 AI Insertion Point</button>
+              <button class="rf-btn btn-nonuse" data-filter="nonuse">🔴 Non-Use Boundary</button>
+              <button class="rf-btn btn-judgment" data-filter="judgment">🟣 Preserve-Human-Judgment</button>
+            </div>
+            <button class="gold-action-btn" id="print-map-btn">
+              <span>⚜️ Export Course Map</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hall of Mirrors Sequence -->
+        <div class="hall-of-mirrors">
+          <div class="mirror-panel" data-step="1" data-boundaries="nonuse judgment">
+            <div class="panel-crown">STEP 01</div>
+            <div class="panel-body">
+              <div class="panel-icon">🏛️</div>
+              <h3 class="panel-title">Epistemic & Temporal Grounding</h3>
+              <p class="panel-desc">Scientific deep time vs. Indigenous relational temporalities. 500-year bioregional baseline synthesis on physical analog canvas.</p>
+              <div class="panel-meta">
+                <span class="meta-gold">Actor: Student Research Lead</span>
+                <span class="meta-gold">Output: Baseline Canvas & Covenant</span>
+              </div>
+              <div class="panel-seals">
+                <span class="seal seal-red">🔴 NON-USE: Sacred Epistemologies</span>
+                <span class="seal seal-purple">🟣 JUDGMENT: Worldview Choice</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mirror-connector">
+            <div class="connector-arrow">❖</div>
+          </div>
+
+          <div class="mirror-panel highlight-panel" data-step="2" data-boundaries="ai judgment">
+            <div class="panel-crown crown-gold">STEP 02</div>
+            <div class="panel-body">
+              <div class="panel-icon">⚡</div>
+              <h3 class="panel-title">Superforecasting & Volatility Testing</h3>
+              <p class="panel-desc">Multi-century anti-fragility modeling under compounding ecological shocks across Year +50 to +500 (salinity, permafrost, biome collapse).</p>
+              <div class="panel-meta">
+                <span class="meta-gold">Actor: Student Team & Faculty</span>
+                <span class="meta-gold">Output: 4-Quadrant Volatility Matrix</span>
+              </div>
+              <div class="panel-seals">
+                <span class="seal seal-amber">🟡 AI INSERTION: Volatility Simulator</span>
+                <span class="seal seal-purple">🟣 JUDGMENT: Stressor Selection</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mirror-connector">
+            <div class="connector-arrow">❖</div>
+          </div>
+
+          <div class="mirror-panel" data-step="3" data-boundaries="judgment">
+            <div class="panel-crown">STEP 03</div>
+            <div class="panel-body">
+              <div class="panel-icon">🌿</div>
+              <h3 class="panel-title">Regenerative System Design & AI Protocol</h3>
+              <p class="panel-desc">Designing the 500-year living infrastructure intervention, circular loops, and defining precise operational bounds for AI assistance.</p>
+              <div class="panel-meta">
+                <span class="meta-gold">Actor: Graduate Student Team</span>
+                <span class="meta-gold">Output: System Architecture & AI Spec</span>
+              </div>
+              <div class="panel-seals">
+                <span class="seal seal-purple">🟣 JUDGMENT: Pure Human System Design</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mirror-connector">
+            <div class="connector-arrow">❖</div>
+          </div>
+
+          <div class="mirror-panel" data-step="4" data-boundaries="nonuse">
+            <div class="panel-crown">STEP 04</div>
+            <div class="panel-body">
+              <div class="panel-icon">🤝</div>
+              <h3 class="panel-title">Co-Creation Workshop & Relational Stress-Testing</h3>
+              <p class="panel-desc">Physical rapid prototyping in studio; embodied peer and community review testing temporal empathy and inter-species equity.</p>
+              <div class="panel-meta">
+                <span class="meta-gold">Actor: Peer Cohort & External Jurors</span>
+                <span class="meta-gold">Output: Multi-Stakeholder Feedback Ledger</span>
+              </div>
+              <div class="panel-seals">
+                <span class="seal seal-red">🔴 NON-USE: Embodied Human Deliberation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mirror-connector">
+            <div class="connector-arrow">❖</div>
+          </div>
+
+          <div class="mirror-panel" data-step="5" data-boundaries="judgment">
+            <div class="panel-crown">STEP 05</div>
+            <div class="panel-body">
+              <div class="panel-icon">⚖️</div>
+              <h3 class="panel-title">Capstone Synthesis & 7th-Gen Moral Defense</h3>
+              <p class="panel-desc">Final synthesis of the unified Blueprint and oral defense of the intergenerational stewardship covenant across 7 generations.</p>
+              <div class="panel-meta">
+                <span class="meta-gold">Actor: SCAD Faculty & Student Team</span>
+                <span class="meta-gold">Output: Anti-Fragility Blueprint & Ethics Charter</span>
+              </div>
+              <div class="panel-seals">
+                <span class="seal seal-purple">🟣 JUDGMENT: 7th-Gen Moral Accountability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course Activity Specification Table -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">⚜️</span>
+              <h3>Course Activity Specification Grid (The Complete 5-Step Map)</h3>
+            </div>
+            <span class="gch-caption">SUST 720 • Updated September 17, 2026</span>
+          </div>
+          <div class="table-responsive">
+            <table class="royal-table">
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>Learning Goal</th>
+                  <th>Activity</th>
+                  <th>Assessment / Output</th>
+                  <th>Student Role</th>
+                  <th>Faculty Role</th>
+                  <th>Decision Point & Decider</th>
+                  <th>Evidence or Feedback</th>
+                </tr>
+              </thead>
+              <tbody id="course-table-body">
+                <!-- Injected via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Boundary Specifications & Risks Grid -->
+        <div class="royal-grid-2">
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">🛡️</span>
+                <h3>Mark the Boundaries on the Map</h3>
+              </div>
+              <span class="gch-caption">Three Enforced Governance Markers</span>
+            </div>
+            <div class="boundary-scroll">
+              <div class="royal-boundary-item b-ai">
+                <div class="rb-header">
+                  <span class="rb-title">🟡 AI Insertion Point</span>
+                  <span class="rb-loc">Step 2 (Superforecasting & Volatility Modeling)</span>
+                </div>
+                <div class="rb-detail"><strong>Person Responsible:</strong> Student Team Research Lead</div>
+                <div class="rb-detail"><strong>Reason:</strong> Expands human combinatorial working memory to simulate multi-century non-linear biophysical feedback loops (e.g., compound permafrost thaw, ocean acidification, biome migration lag).</div>
+                <div class="rb-test"><em>[Assumption / Proposed Test]</em> Students must corroborate each generated shock against 2 peer-reviewed empirical climate papers before adoption.</div>
+              </div>
+
+              <div class="royal-boundary-item b-nonuse">
+                <div class="rb-header">
+                  <span class="rb-title">🔴 Non-Use Boundary</span>
+                  <span class="rb-loc">Step 1 (Epistemic Grounding) & Step 4 (Co-Creation)</span>
+                </div>
+                <div class="rb-detail"><strong>Person Responsible:</strong> Entire Cohort, Faculty & Jurors</div>
+                <div class="rb-detail"><strong>Reason:</strong> Indigenous relational knowledge is sacred and living; AI ingestion flattens ontologies and violates CARE/OCAP Data Sovereignty. In Step 4, affective human confrontation and community trust in co-creation cannot be replaced by synthetic sentiment.</div>
+                <div class="rb-test"><em>[Evidence]</em> Lewis et al. (2020) Indigenous Protocol and AI; Selwyn (2023).</div>
+              </div>
+
+              <div class="royal-boundary-item b-judgment">
+                <div class="rb-header">
+                  <span class="rb-title">🟣 Preserve-Human-Judgment Zone</span>
+                  <span class="rb-loc">Steps 1, 3, and 5 (Worldview, System Architecture, Moral Defense)</span>
+                </div>
+                <div class="rb-detail"><strong>Person Responsible:</strong> Graduate Students & Course Faculty</div>
+                <div class="rb-detail"><strong>Reason:</strong> Sustainable system design, material circularity, ethical intentionality, and moral accountability to future generations cannot be outsourced to statistical models.</div>
+                <div class="rb-test"><em>[Evidence]</em> Delegating design and moral judgment causes severe cognitive deskilling (Cummings 2017).</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">👁️</span>
+                <h3>Make the Risk Visible</h3>
+              </div>
+              <span class="gch-caption">Mandatory Milestone 1 Disclosures</span>
+            </div>
+            <div class="royal-risk-grid">
+              <div class="royal-risk-card r-concern">
+                <div class="rr-tag">DOCUMENTED CONCERN OR RESISTANCE</div>
+                <h4>Epistemic Flattening & Algorithmic Complacency</h4>
+                <p>Students exposed early to generative LLMs default to conventional techno-managerial clichés (e.g., carbon-capture drones, sealed biodomes) instead of radical regenerative systems.</p>
+              </div>
+
+              <div class="royal-risk-card r-benefit">
+                <div class="rr-tag">ONE POSSIBLE BENEFIT</div>
+                <h4>Deep-Time Anti-Fragility Stress-Testing</h4>
+                <p>Simulating unpredictable ecological shocks across centuries surfaces hidden systemic tipping points, forcing students to engineer genuinely anti-fragile closed loops.</p>
+              </div>
+
+              <div class="royal-risk-card r-safeguard">
+                <div class="rr-tag">ONE PRELIMINARY SAFEGUARD</div>
+                <h4>Provenance Gate & Tri-Vector Friction Rule</h4>
+                <p>AI cannot be accessed until the physical analog 500-year baseline map is signed off by faculty. Output delivers 3 contradictory vectors requiring written student defense.</p>
+              </div>
+
+              <div class="royal-risk-card r-unresolved">
+                <div class="rr-tag">ONE UNRESOLVED QUESTION TO TEST</div>
+                <h4>Temporal Expansion vs. Statistical Anchoring</h4>
+                <p>Does algorithmic volatility modeling expand students' perception of deep-time resilience, or does it invisibly tether their design thinking to historical dataset averages?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 2: STAKEHOLDER SNAPSHOT (STEP 1) -->
+      <!-- ======================================================== -->
+      <section id="tab-stakeholder" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT II</span>
+            <h2>Stakeholder Snapshot & The Missing-Person Check</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">Whose work changes? Multi-positional audit across four lenses.</p>
+          </div>
+          <div class="decree-seal-badge">
+            <span>⚜️ AUDIT STATUS : COMPLETE COVERAGE VALIDATED</span>
+          </div>
+        </div>
+
+        <div class="royal-quad-container">
+          <div class="royal-quad-box">
+            <div class="rqb-crown">POSITION I</div>
+            <div class="rqb-title">
+              <span class="rqb-icon">👤</span>
+              <h3>1. Users</h3>
+            </div>
+            <div class="rqb-actors">SCAD Graduate Students, Studio Teams, Tech Leads</div>
+            <ul class="rqb-list">
+              <li><strong>Interests:</strong> Exploring 500-year futures; portfolio-grade sustainable systems.</li>
+              <li><strong>Risks:</strong> Deskilling; cognitive atrophy; loss of authentic design voice.</li>
+              <li><strong>Benefits:</strong> Surfaces non-linear climate complexity; breaks through conceptual deadlocks.</li>
+              <li><strong>Hidden Labor:</strong> Prompt debugging; validating contradictory model outputs.</li>
+            </ul>
+          </div>
+
+          <div class="royal-quad-box">
+            <div class="rqb-crown">POSITION II</div>
+            <div class="rqb-title">
+              <span class="rqb-icon">⚖️</span>
+              <h3>2. Decision Makers</h3>
+            </div>
+            <p class="rqb-actors">SUST 720 Faculty, Department Chair, SCAD Integrity Council</p>
+            <ul class="rqb-list">
+              <li><strong>Interests:</strong> Graduate rigor; authentic student learning; ethical accreditation.</li>
+              <li><strong>Risks:</strong> Grading hallucinated regurgitation; faculty burnout during audits.</li>
+              <li><strong>Benefits:</strong> Higher student systems-literacy; leadership in long-range foresight.</li>
+              <li><strong>Accountability:</strong> Must defend grading standards against accreditation bodies.</li>
+            </ul>
+          </div>
+
+          <div class="royal-quad-box">
+            <div class="rqb-crown">POSITION III</div>
+            <div class="rqb-title">
+              <span class="rqb-icon">🌊</span>
+              <h3>3. People Affected</h3>
+            </div>
+            <p class="rqb-actors">Indigenous Knowledge Keepers, Climate Partners, Future Alumni</p>
+            <ul class="rqb-list">
+              <li><strong>Interests:</strong> Non-extractive cultural respect; authentic deep-time stewardship.</li>
+              <li><strong>Risks:</strong> Commodification of sacred cosmologies; cultural tokenism in design.</li>
+              <li><strong>Benefits:</strong> Elevating regenerative principles into global design leadership.</li>
+              <li><strong>Points of Refusal:</strong> Refusal to allow sacred ceremonies into training corpora.</li>
+            </ul>
+          </div>
+
+          <div class="royal-quad-box highlight-quad">
+            <div class="rqb-crown crown-crimson">POSITION IV</div>
+            <div class="rqb-title">
+              <span class="rqb-icon">🛑</span>
+              <h3>4. People Excluded or Burdened</h3>
+            </div>
+            <p class="rqb-actors">Data Annotators, Host Towns, Savannah River Basin, Unborn 7th Gen</p>
+            <ul class="rqb-list">
+              <li><strong>Underpaid Labor:</strong> Global South content moderators filtering traumatic data.</li>
+              <li><strong>Ecological Burden:</strong> Millions of gallons of potable water consumed by data centers.</li>
+              <li><strong>Intergenerational Burden:</strong> Descendants bearing the climate fallout of modern compute.</li>
+              <li><strong>Access Needs:</strong> Low-bandwidth / neurodivergent students needing multimodal access.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Missing Person Audit Card -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">🕊️</span>
+              <h3>The Missing-Person Check (Audit Gap & Remediation)</h3>
+            </div>
+            <span class="gch-caption">Trade Audit with Team 06 (Material Ecology Studio)</span>
+          </div>
+          <div class="royal-audit-callout">
+            <div class="rac-quote">
+              “Your initial stakeholder snapshot was completely anthropocentric and contemporary. In a course on Deep Time that claims to center the Seventh Generation, you omitted non-human ecological entities and the actual unborn humans of Year 2526.”
+            </div>
+            <div class="rac-remediation">
+              <h4>Remediations Implemented & Logged:</h4>
+              <ol>
+                <li><strong>More-Than-Human Inclusion:</strong> The <em>Savannah River Basin</em> and <em>Coastal Georgia Salt Marsh</em> were designated as official stakeholders bearing data center water stress.</li>
+                <li><strong>7th-Generation Proxy Role:</strong> Instituted a mandatory peer review role where one student exclusively interrogates the project from the vantage point of a descendant in 2226 CE.</li>
+                <li><strong>Analog Right of Refusal:</strong> Students retain the right to declare an <em>Analog Exemption</em>, completing all deliverables using traditional craft without grade penalty.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 3: BOUNDED QUESTION & ETHICS (STEP 2) -->
+      <!-- ======================================================== -->
+      <section id="tab-bounded" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT III</span>
+            <h2>Step 2: Bounded Question & Ethical Screening</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">One question per team. Names actor, activity, capability, purpose, and protected value.</p>
+          </div>
+          <div class="decree-seal-badge seal-approved">
+            <span>⚜️ DIRECTOR CHECK: APPROVED</span>
+          </div>
+        </div>
+
+        <div class="royal-monument-proclamation">
+          <div class="rmp-crown">OFFICIAL BOUNDED QUESTION PROCLAMATION</div>
+          <div class="rmp-text">
+            “How might <span class="hl-gold">SCAD graduate sustainable design students</span> during <span class="hl-cyan">multi-century scenario planning and regenerative system design</span> use <span class="hl-teal">algorithmic superforecasting and ecological perturbation simulation</span> to <span class="hl-purple">surface non-linear systemic tipping points</span>, while strictly <span class="hl-crimson">preserving student moral accountability across seven generations and preventing the algorithmic extraction of Indigenous sacred cosmologies</span>?”
+          </div>
+        </div>
+
+        <div class="royal-refusal-edict">
+          <div class="rre-header">
+            <span class="rre-seal">🛑</span>
+            <h3>The Written Non-Goal</h3>
+          </div>
+          <p>
+            “Our team will <strong>NOT</strong> use AI to formulate the core ethical covenants, select regenerative values, replace human and inter-species co-creation workshops, or automate the Seventh-Generation moral assessment. We explicitly reject AI as an autonomous sustainability arbiter or surrogate ethical decision-maker.”
+          </p>
+        </div>
+
+        <!-- Five Ethical Questions Table -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">⚖️</span>
+              <h3>Testing Candidates Through the Five Ethical Questions</h3>
+            </div>
+            <span class="gch-caption">Claims Sorted by Evidence [E], Assumption [A], or Proposed Test [T]</span>
+          </div>
+          <div class="table-responsive">
+            <table class="royal-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Ethical Question</th>
+                  <th>Team Claim & Analysis</th>
+                  <th>Epistemic Status</th>
+                  <th>Preliminary Safeguard / Test</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Q1</strong></td>
+                  <td>Who benefits and who bears the burden of this capability?</td>
+                  <td>Students expand combinatorial working memory; burden falls on data workers and regional water tables.</td>
+                  <td><span class="royal-tag tag-e">Evidence [E]</span></td>
+                  <td>Enforce 5-query token limit per team; prioritize local quantized models.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q2</strong></td>
+                  <td>Does this use displace human relational judgment?</td>
+                  <td>If AI selects the 'optimal' sustainable system, human agency is usurped. Restricting AI to raw climate stress-testing keeps design agency with humans.</td>
+                  <td><span class="royal-tag tag-a">Assumption [A]</span></td>
+                  <td>Peer Trace Test verifies that 100% of regenerative system architectures are human-authored.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q3</strong></td>
+                  <td>Does this respect Indigenous Data Sovereignty?</td>
+                  <td>Commercial LLMs absorb and distort sacred oral traditions without consent (violating CARE/OCAP).</td>
+                  <td><span class="royal-tag tag-e">Evidence [E]</span></td>
+                  <td>Hard Non-Use Boundary in Step 1. Direct study of physical, Indigenous-authored books only.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q4</strong></td>
+                  <td>Is the decision logic transparent and inspectable?</td>
+                  <td>Black-box neural models cannot explain why a specific biophysical tipping point was triggered.</td>
+                  <td><span class="royal-tag tag-e">Evidence [E]</span></td>
+                  <td>All AI perturbations treated as speculative hypotheses requiring 2 empirical paper citations.</td>
+                </tr>
+                <tr>
+                  <td><strong>Q5</strong></td>
+                  <td>What irreversible harm could occur?</td>
+                  <td>Students could internalize that long-range planetary stewardship can be outsourced to algorithms, leading to real-world collapse.</td>
+                  <td><span class="royal-tag tag-a">Assumption [A]</span></td>
+                  <td>Mandatory signed Generational Ethics Charter and oral defense in Step 5.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 4: EVIDENCE CARDS & CRITIQUE (STEP 3) -->
+      <!-- ======================================================== -->
+      <section id="tab-evidence" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT IV</span>
+            <h2>Step 3: Week 1 Evidence Cards & Structural Revision</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">Testing the Course Map against documented harms vs. hoped-for benefits.</p>
+          </div>
+          <div class="decree-seal-badge">
+            <span>⚜️ STRUCTURAL REVISION: COMPLETE</span>
+          </div>
+        </div>
+
+        <div class="palace-cards-grid">
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 01</div>
+            <h3>Epistemic Flattening</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> LLMs default to linear, Western techno-capitalist progress narratives, erasing cyclical and relational indigenous temporalities.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> Step 1 absolute Non-Use Boundary. Primary scholarship grounding.
+            </div>
+          </div>
+
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 02</div>
+            <h3>Temporal Anchoring</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> Generative prompts produce repetitive techno-managerial aesthetics, suffocating radical regenerative imagination.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> Step 2 Tri-Vector Contradiction Rule forces divergent friction.
+            </div>
+          </div>
+
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 03</div>
+            <h3>Ghost Labor Exploitation</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> Data enrichment and RLHF rely on precarious, traumatized workers in the Global South.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> Explicit discussion in Step 1 Stakeholder Snapshot; minimal inference policy.
+            </div>
+          </div>
+
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 04</div>
+            <h3>Ecological Cost of Inference</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> Hyperscale AI data centers consume gigawatt-hours and millions of gallons of cooling water.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> Physical 5-Query Compute Token Card rationed to each team.
+            </div>
+          </div>
+
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 05</div>
+            <h3>Cognitive Atrophy</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> Offloading system design and ethical covenants degrades students' capacity for long-horizon ecological synthesis.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> AI evicted from Step 3; regenerative system architecture is 100% human judgment.
+            </div>
+          </div>
+
+          <div class="palace-evidence-card">
+            <div class="pec-seal">CARD 06</div>
+            <h3>Rubber-Stamp Oversight Illusion</h3>
+            <p class="pec-harm"><strong>Documented Harm:</strong> 'Human in the loop' collapses into thoughtless, uncritical click-through approvals within 3 cycles.</p>
+            <div class="pec-mitigation">
+              <strong>Course Safeguard:</strong> 3-Stage Friction Review Path requiring oral defense before faculty.
+            </div>
+          </div>
+        </div>
+
+        <!-- Structural Revision Box -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">📜</span>
+              <h3>Structural Revision from Peer & Director Critique</h3>
+            </div>
+            <span class="gch-caption">Critique Panel: SCAD Faculty Director + Team 01</span>
+          </div>
+          <div class="versailles-critique-panel">
+            <div class="vcp-critique">
+              <h4>Director Critique Directive:</h4>
+              <p>“Your initial proposal had AI inserted into Step 3 to help students design the core regenerative system and write the ethics charter. That directly triggers Evidence Card 05 (Cognitive Atrophy) and Card 06 (Rubber-Stamp Oversight). If the AI designs the solution or drafts the ethics, the student is no longer practicing sustainable systems thinking; they are just rubber-stamping algorithmic defaults.”</p>
+            </div>
+            <div class="vcp-action">
+              <h4>Structural Revision Enacted:</h4>
+              <ul>
+                <li><strong>AI Eviction:</strong> AI removed completely from Step 3 (Regenerative System Design & AI Governance). Step 3 is now a pure <em>Preserve-Human-Judgment Zone</em>.</li>
+                <li><strong>Confined Insertion:</strong> AI restricted solely to Step 2 as an environmental antagonist (generating unpredicted biophysical climate shocks).</li>
+                <li><strong>Resource Rationing:</strong> Instituted a 5-query token limit per team to respect ecological data center burdens.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 5: THE ASSISTANCE LINE (STEP 4) -->
+      <!-- ======================================================== -->
+      <section id="tab-assistance" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT V</span>
+            <h2>Step 4: Drawing the Assistance Line & AI Proposal</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">Keeping consequential decisions with accountable humans. Rejecting the rubber-stamp trap.</p>
+          </div>
+          <div class="decree-seal-badge seal-warning">
+            <span>⚜️ ANTI-RUBBER-STAMP GATE: ENFORCED</span>
+          </div>
+        </div>
+
+        <!-- Assistance vs Substitution Comparator -->
+        <div class="palace-comparator">
+          <div class="comp-wing wing-assistance">
+            <div class="wing-head">
+              <span class="wing-seal">⚜️</span>
+              <h3>Genuine Assistance (Permitted)</h3>
+              <span class="wing-tag">COMPLIANT WITH SUST 720 CHARTER</span>
+            </div>
+            <ul class="wing-list">
+              <li>AI generates 3 contradictory, unpredicted ecological climate shocks.</li>
+              <li>Student inspects underlying parameters, verifies against 2 empirical papers.</li>
+              <li>Consequential agency and moral responsibility remain with student.</li>
+              <li>Decision path is transparent, logged, and orally defended before faculty.</li>
+            </ul>
+          </div>
+
+          <div class="comp-boundary-chasm">
+            <div class="chasm-line"></div>
+            <div class="chasm-text">THE ASSISTANCE LINE</div>
+            <div class="chasm-line"></div>
+          </div>
+
+          <div class="comp-wing wing-substitution">
+            <div class="wing-head">
+              <span class="wing-seal">⚔️</span>
+              <h3>Toxic Substitution (Prohibited)</h3>
+              <span class="wing-tag tag-failed">IMMEDIATE RUBBER-STAMP FAILURE</span>
+            </div>
+            <ul class="wing-list">
+              <li>AI designs the regenerative system architecture or drafts the ethics charter.</li>
+              <li>Student or instructor clicks "Approve" with no verifiable review path.</li>
+              <li>Consequential decision moved to the statistical system.</li>
+              <li>Opaque statistical defaults replace deep-time ecological stewardship.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Three-Stage Review Path -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">🏰</span>
+              <h3>The Three-Stage Verifiable Review Path</h3>
+            </div>
+            <span class="gch-caption">Mandatory Pedagogical Friction Protocol</span>
+          </div>
+          <div class="three-stages-grid">
+            <div class="stage-card">
+              <div class="stage-banner">STAGE I</div>
+              <h4>Scientific Cross-Examination</h4>
+              <p>Student must locate two empirical peer-reviewed climate studies or paleoclimate analogs corroborating the plausibility of the AI-generated shock.</p>
+            </div>
+            <div class="stage-card">
+              <div class="stage-banner">STAGE II</div>
+              <h4>Relational Consequence Statement</h4>
+              <p>Student writes a mandatory 100-word analysis: <em>Who suffers? Which non-human species are displaced? How does this affect communities in 2226 CE?</em></p>
+            </div>
+            <div class="stage-card">
+              <div class="stage-banner">STAGE III</div>
+              <h4>Oral Desk Defense Gate</h4>
+              <p>Student orally defends their system's anti-fragile adaptation to faculty during desk critique before integrating it into the master blueprint.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visible Human Decisions (VHD) -->
+        <div class="gilded-card mt-8">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">👑</span>
+              <h3>Visible Human Decisions (VHD) Ledger</h3>
+            </div>
+            <span class="gch-caption">Exchanged and Verified in Trade Openings</span>
+          </div>
+          <div class="table-responsive">
+            <table class="royal-table">
+              <thead>
+                <tr>
+                  <th>VHD ID</th>
+                  <th>Consequential Decision</th>
+                  <th>Deciding Human Role</th>
+                  <th>Information Inspected</th>
+                  <th>Log Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>VHD-01</strong></td>
+                  <td>500-Year Baseline & Ontological Covenant</td>
+                  <td>Student Team (Consensus)</td>
+                  <td>Primary analog literature, regional geology</td>
+                  <td>Course Map (Step 1)</td>
+                </tr>
+                <tr>
+                  <td><strong>VHD-02</strong></td>
+                  <td>Adoption/Rejection of Climate Volatility Shock</td>
+                  <td>Student Lead Researcher</td>
+                  <td>Empirical papers, relational statement</td>
+                  <td>Transparency Log Entry 004</td>
+                </tr>
+                <tr>
+                  <td><strong>VHD-03</strong></td>
+                  <td>500-Year Regenerative System Architecture</td>
+                  <td>Full Student Team</td>
+                  <td>Circular design criteria, material tests</td>
+                  <td>Master Blueprint Dossier</td>
+                </tr>
+                <tr>
+                  <td><strong>VHD-04</strong></td>
+                  <td>Seventh-Generation Stewardship Sign-off</td>
+                  <td>SUST 720 Course Faculty</td>
+                  <td>Generational Ethics Charter, oral defense</td>
+                  <td>Final SCAD Evaluation Dossier</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 6: PEER TRACE TEST -->
+      <!-- ======================================================== -->
+      <section id="tab-trace" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT VI</span>
+            <h2>Peer Trace Test Simulator</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">Give the map to another team without explaining it first. Blind audit test.</p>
+          </div>
+          <div class="decree-seal-badge seal-approved">
+            <span>⚜️ AUDITED BY TEAM 02 (BIO-REGIONAL FUTURES)</span>
+          </div>
+        </div>
+
+        <div class="royal-grid-2">
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">🏛️</span>
+                <h3>Interactive Trace Test Checklist</h3>
+              </div>
+              <span class="gch-caption">Verify Clarity of Sequence & Boundaries</span>
+            </div>
+            <div class="royal-checklist">
+              <div class="rc-item">
+                <div class="rc-seal">✓</div>
+                <div class="rc-info">
+                  <strong>1. Sequence Visibility:</strong> They can follow the sequence from goal to feedback or assessment.
+                  <p class="rc-sub">Traced smoothly from Step 1 Grounding to Step 5 Moral Defense.</p>
+                </div>
+              </div>
+
+              <div class="rc-item">
+                <div class="rc-seal">✓</div>
+                <div class="rc-info">
+                  <strong>2. Actor & Decider Identification:</strong> They can name who acts and who decides at each step.
+                  <p class="rc-sub">Identified students as deciders in Steps 1-3; faculty in Step 5.</p>
+                </div>
+              </div>
+
+              <div class="rc-item">
+                <div class="rc-seal">✓</div>
+                <div class="rc-info">
+                  <strong>3. AI Insertion Point:</strong> They can locate the AI insertion point without guidance.
+                  <p class="rc-sub">Located immediately at Step 2 (Superforecasting & Volatility Testing).</p>
+                </div>
+              </div>
+
+              <div class="rc-item">
+                <div class="rc-seal">✓</div>
+                <div class="rc-info">
+                  <strong>4. Non-Use Boundary:</strong> They can locate the non-use boundary.
+                  <p class="rc-sub">Identified Step 1 (Sacred Cosmologies) & Step 4 (Co-Creation Workshop).</p>
+                </div>
+              </div>
+
+              <div class="rc-item">
+                <div class="rc-seal">✓</div>
+                <div class="rc-info">
+                  <strong>5. Human-Judgment Zones:</strong> They can locate every preserve-human-judgment zone.
+                  <p class="rc-sub">Identified Steps 1, 3, and 5.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">📜</span>
+                <h3>Peer Audit Finding & Post-Test Revision</h3>
+              </div>
+              <span class="gch-caption">Team 02 Audit Notes</span>
+            </div>
+            <div class="peer-verdict-scroll">
+              <div class="pv-finding">
+                <h4>Peer Critique Observation:</h4>
+                <p>“In your initial draft of Step 2, you had AI generating both the ecological shocks AND suggesting the regenerative response. That blurred the line into substitution, because the AI was solving the graduate design challenge for the student.”</p>
+              </div>
+              <div class="pv-revision">
+                <h4>Revision Made After Trace Test:</h4>
+                <p>We severed the regenerative response from the AI insertion point. In Step 2, the AI is <strong>restricted strictly to formulating external ecological shocks</strong> (acting as volatile nature). The task of designing the regenerative system architecture, material selection, and social adaptation was moved entirely into a <strong>Preserve-Human-Judgment Zone</strong> in Step 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 7: TRANSPARENCY LOG & WHAT IS IT GUIDE -->
+      <!-- ======================================================== -->
+      <section id="tab-transparency" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT VII</span>
+            <h2>The Transparency Log & Governance Guide</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">The state ledger tracking boundary decisions, missing-person gaps, and ethical friction.</p>
+          </div>
+          <div class="gilded-controls">
+            <button class="gold-action-btn" id="export-log-btn">
+              <span>⚜️ Export Log (Markdown)</span>
+            </button>
+            <button class="gold-action-btn" id="export-json-btn">
+              <span>📄 Export Log (JSON)</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- "What is the Transparency Log?" Master Explainer Card -->
+        <div class="gilded-card explainer-card">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">📖</span>
+              <h3>What is the Transparency Log? (Definition & Purpose)</h3>
+            </div>
+            <span class="gch-caption">Core Instrument of the SCAD AI Governance Framework</span>
+          </div>
+
+          <div class="explainer-content">
+            <div class="explainer-lead">
+              <p>
+                The <strong>Transparency Log</strong> is the official, verifiable audit ledger of a graduate design team’s ethical deliberations. Mandated under the SCAD AI Governance Framework (September 17, 2026), it is not a casual changelog or note repository—it is the <strong>constitutional proof of human accountability</strong>.
+              </p>
+            </div>
+
+            <div class="explainer-grid">
+              <div class="eg-box">
+                <div class="eg-icon">🛡️</div>
+                <h4>1. What Does It Do?</h4>
+                <p>It records every consequential decision where human agency, AI capability, and ethical boundaries intersect. It documents <em>who decided, what information was inspected, what trade-offs were confronted,</em> and <em>what values were protected.</em></p>
+              </div>
+
+              <div class="eg-box">
+                <div class="eg-icon">⚡</div>
+                <h4>2. Why Does It Matter?</h4>
+                <p>Without a transparency log, AI use collapses into covert substitution: students use AI, claim it was 'assistance', and nobody can verify where the machine ended and the human began. The log makes the human review path <strong>inspectable and falsifiable</strong>.</p>
+              </div>
+
+              <div class="eg-box">
+                <div class="eg-icon">🕊️</div>
+                <h4>3. The Missing-Person Check</h4>
+                <p>The log permanently records who was omitted from initial design drafts (e.g., non-human river biomes, unborn 7th-generation descendants, exploited data workers) and tracks the concrete structural revisions made to address those gaps.</p>
+              </div>
+
+              <div class="eg-box">
+                <div class="eg-icon">🏛️</div>
+                <h4>4. Accreditation & Evaluation</h4>
+                <p>During the Director Check and final studio juries, faculty and NASAD accreditors inspect the Transparency Log to certify that graduate learning outcomes were achieved through authentic human cognition rather than algorithmic mimicry.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Log Recording & Entries List -->
+        <div class="royal-grid-2 mt-8">
+          <!-- Form to record entry -->
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">✍️</span>
+                <h3>Record Governance Decision</h3>
+              </div>
+              <span class="gch-caption">Commit New Audit Entry</span>
+            </div>
+            <form id="transparency-form" class="palace-form">
+              <div class="pform-group">
+                <label>Date & Academic Session</label>
+                <input type="text" id="log-date" value="2026-09-17" required>
+              </div>
+              <div class="pform-group">
+                <label>Actor / Deciding Role</label>
+                <input type="text" id="log-actor" placeholder="e.g., Team 04 Research Lead / Faculty Advisor" required>
+              </div>
+              <div class="pform-group">
+                <label>Governance Decision Type</label>
+                <select id="log-type" required>
+                  <option value="Boundary Adjustment">Boundary Adjustment (Moving/Enforcing Boundaries)</option>
+                  <option value="Missing-Person Discovery">Missing-Person Discovery (Closing Omission Gaps)</option>
+                  <option value="Ethical Question Screening">Ethical Question Screening (5 Questions Test)</option>
+                  <option value="Director Check Revision">Director Check Revision (Bounding the Scope)</option>
+                  <option value="Assistance Line Review">Assistance Line Review (Anti-Rubber-Stamp Audit)</option>
+                </select>
+              </div>
+              <div class="pform-group">
+                <label>Decision, Rationale & Protected Values</label>
+                <textarea id="log-desc" rows="3" placeholder="Describe precisely what was decided, why, and what evidence supports it..." required></textarea>
+              </div>
+              <button type="submit" class="royal-submit-btn">⚜️ Commit to Transparency Ledger</button>
+            </form>
+          </div>
+
+          <!-- Entries list -->
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">📜</span>
+                <h3>Verified Governance Ledger</h3>
+              </div>
+              <span class="gch-caption" id="entry-count-badge">5 Verified Entries</span>
+            </div>
+            <div class="palace-log-scroll" id="log-entries-list">
+              <!-- Dynamically populated via app.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================== -->
+      <!-- TAB 8: DEEP TIME SANDBOX (GOVERNED SIMULATOR) -->
+      <!-- ======================================================== -->
+      <section id="tab-sandbox" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">ACT VIII</span>
+            <h2>Deep Time Volatility Simulator</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">Simulate the governed AI interaction: Superforecasting & Tri-Vector Biophysical Stress-Testing.</p>
+          </div>
+          <div class="decree-seal-badge seal-quota">
+            <span id="token-count">⚜️ COMPUTE QUOTA : 5 / 5 REMAINING</span>
+          </div>
+        </div>
+
+        <div class="royal-grid-2">
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">🔭</span>
+                <h3>1. Input 500-Year Bioregional Baseline</h3>
+              </div>
+              <span class="gch-caption">Must be grounded in verified geological data</span>
+            </div>
+            <div class="pform-group">
+              <label>Bioregional Focus Area</label>
+              <input type="text" id="sandbox-region" value="Coastal Georgia Salt Marsh & Barrier Islands">
+            </div>
+            <div class="pform-group">
+              <label>Temporal Leap Horizon</label>
+              <select id="sandbox-horizon">
+                <option value="150">Year +150 (2176 CE)</option>
+                <option value="300" selected>Year +300 (2326 CE)</option>
+                <option value="500">Year +500 (2526 CE)</option>
+              </select>
+            </div>
+            <div class="pform-group">
+              <label>Human-Authored Regenerative System Hypothesis</label>
+              <textarea id="sandbox-hypothesis" rows="3">Bio-engineered mycorrhizal revetments and living sediment catchments designed for dynamic salt-marsh migration under +3.2m sea level rise.</textarea>
+            </div>
+            <button class="royal-submit-btn w-full mt-4" id="run-stress-btn">
+              ☀️ Run Governed Tri-Vector Simulation
+            </button>
+          </div>
+
+          <div class="gilded-card">
+            <div class="gilded-card-header">
+              <div class="gch-left">
+                <span class="gold-ornament">⚡</span>
+                <h3>2. Tri-Vector Stress Output & Friction Gate</h3>
+              </div>
+              <span class="gch-caption">Governed by Assistance Line Rules</span>
+            </div>
+            <div id="sandbox-output" class="sandbox-royal-theater">
+              <div class="palace-placeholder">
+                <div class="pp-seal">☀️</div>
+                <h4>Awaiting Simulation Command</h4>
+                <p>Click "Run Governed Tri-Vector Simulation" to generate three contradictory biophysical shocks calculated from empirical climate models.</p>
+                <p class="pp-warning">Notice: The AI is constitutionally barred from drafting your regenerative solution or ethics charter.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ======================================================== -->
+      <!-- TAB 9: THE STORYBOOK (FOR EXPLORERS AGED 10 TO 500) -->
+      <!-- ======================================================== -->
+      <section id="tab-storybook" class="palace-pane">
+        <div class="palace-pane-header">
+          <div class="monumental-heading">
+            <span class="roman-num">THE ILLUSTRATED CHRONICLES</span>
+            <h2>The Deep Time Storybook : A 500-Year Adventure</h2>
+            <p class="heading-ornament">✦ ✦ ✦</p>
+            <p class="monumental-sub">The whole project explained chronologically like a storybook for young explorers, future ancestors, and curious minds!</p>
+          </div>
+          <div class="gilded-controls">
+            <a href="https://github.com/cornishlikeadam/sust720-deep-time-os/tree/main/the-deep-time-storybook" target="_blank" class="gold-action-btn" style="text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem;">
+              <span>📂 Browse Folders on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="gilded-card">
+          <div class="gilded-card-header">
+            <div class="gch-left">
+              <span class="gold-ornament">📚</span>
+              <h3 id="storybook-chapter-title">Chapter 0: What on Earth is "Deep Time"?</h3>
+            </div>
+            <div class="gch-controls">
+              <select id="storybook-chapter-select" style="background:rgba(12,18,34,0.9); border:1px solid var(--gold-mid); color:#fff; padding:0.4rem 0.8rem; border-radius:6px; font-family:var(--font-ui); font-size:0.85rem; outline:none;">
+                <option value="0">Chapter 0: What on Earth is "Deep Time"?</option>
+                <option value="1">Chapter 1: The Circle of Friends (Who are we helping?)</option>
+                <option value="2">Chapter 2: The Magic Question & The Written Promise</option>
+                <option value="3">Chapter 3: Watch Out for the Lazy Robot Traps!</option>
+                <option value="4">Chapter 4: The Golden Rule: The Assistance Line</option>
+                <option value="5">Chapter 5: The Secret Detective Test (Peer Trace)</option>
+                <option value="6">Chapter 6: The Golden Diary (The Transparency Log)</option>
+                <option value="7">Chapter 7: Epilogue — The 500-Year Treasure Box</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="storybook-content-area" class="explainer-content" style="font-family:var(--font-serif); font-size:1.15rem; line-height:1.75; color:var(--text-parchment);">
+            <!-- Populated dynamically by app.js -->
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:2rem; border-top:1px solid rgba(212,175,55,0.3); padding-top:1.5rem;">
+            <button id="sb-prev-btn" class="gold-action-btn" style="padding:0.5rem 1rem;">⬅️ Previous Chapter</button>
+            <span id="sb-page-indicator" style="font-family:var(--font-code); font-size:0.85rem; color:var(--gold-light);">Page 1 of 8</span>
+            <button id="sb-next-btn" class="gold-action-btn" style="padding:0.5rem 1rem;">Next Chapter ➡️</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Imperial Footer -->
+    <footer class="royal-footer">
+      <div class="rf-col">
+        <span class="rf-gold">SAVANNAH COLLEGE OF ART AND DESIGN</span> • <span>DESIGN FOR SUSTAINABILITY</span>
+      </div>
+      <div class="rf-col">
+        <span>FRAMEWORK: SEPTEMBER 17, 2026</span> • <span class="rf-gold">AGENT: AGY-SUST720-DEEPTIME-GOVERNOR</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
