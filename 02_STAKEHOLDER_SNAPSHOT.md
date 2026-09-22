@@ -56,14 +56,44 @@
 
 ---
 
-## 2. Missing-Person Check (Audit Results)
+## 2. Follow One Person Through the Activity
 
-**Audit Partner:** Team 06 (Material Ecology Studio)  
-**Finding:**  
-When reviewing our initial draft, Team 06 observed:
-> *"Your stakeholder list is exclusively human, academic, and contemporary. You are teaching a course called 'Designing in Deep Time' that claims to center the Seventh Generation and non-human relations, yet your stakeholder snapshot completely omits non-human entities and the actual unborn humans of Year 2526."*
+| Person | What They Encounter | Decision They Can Make | Decision Made About Them | Possible Hidden Labor or Burden | Needed Safeguard |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **User:**<br>Elena, Graduate Student | Encountering a complex Year +300 coastal salinization shock output by the tool | Can choose to adopt, challenge, or completely discard the AI-generated shock | Faculty grades her on whether her system responds anti-fragilely to the shock | Extra hours spent fact-checking whether the model's climate physics are accurate | Tri-Vector Friction Rule: AI must provide 3 competing scenarios; student must write justification |
+| **Decision Maker:**<br>Dr. Marcus, Adjunct Instructor | Reviewing 15 student project blueprints submitted with AI-generated volatility graphs | Decides whether a student's design shows genuine ecological mastery or empty gloss | Department chair evaluates Dr. Marcus's grading consistency across studio sections | Uncompensated weekend grading hours trying to detect synthetic text | Standardized 10-minute Socratic verbal defense required for every project submission |
+| **Affected Person:**<br>Tasha, Cultural Historian | Seeing coastal barrier island heritage referenced in student deep-time adaptation maps | Decides whether the project honors living community memory or exploits it | Students might reference her community's oral histories without her consent | Emotional labor of correcting naive student assumptions about coastal survival | Pre-flight Covenant: Sacred community practices require written community liaison sign-off |
+| **Excluded / Burdened:**<br>The Savannah River Aquifer | Diverting 1.5 million gallons of cooling water daily to regional server farms | Cannot make human decisions; endures physical thermal and volumetric drawdown | Students and tech companies decide to run compute cycles without seeing the water cost | Bearing ecological degradation and salinization without legal standing or voice | Compute Budget Cap: Each student team receives an energy/water ledger limit per milestone |
 
-### Remediations Logged in Response to the Gap:
-1. **Explicit Inclusion of the More-Than-Human:** We added the *Savannah River Basin* and *Coastal Georgia Salt Marsh Ecosystem* as explicit non-human stakeholders burdened by physical data center water consumption.
-2. **Proxy Representation for the 7th Generation:** We instituted a mandatory **7th-Generation Proxy Role** in student design reviews: at least one peer reviewer must exclusively evaluate the project from the perspective of an inhabitant of 2226 CE.
-3. **Point of Refusal Instituted:** We formally enacted a policy that students retain the explicit right to declare an **Analog Exemption**, choosing physical hand-drafted storyboards and physical material artifacts without grade disparity.
+---
+
+## 3. Missing-Person Check (Benchmark Audit Card)
+
+### 💬 THE GAP, IN THEIR WORDS
+> *"I teach two studio sections as an adjunct on top of my day job. The curriculum added this new algorithmic forecasting tool over the summer, but nobody offered me paid training or asked if it fit our studio timeline. Now on Monday morning, my students are asking me to debug prompt hallucinations, and I'm the one who has to defend their grades during portfolio reviews. I was never in the room when the tool was chosen."*
+
+### 🏷️ WHO THEY ARE
+* **Name & Role:** Denise, Adjunct Studio Instructor (Teaching 2 studio sections).
+* **Why the Snapshot Omitted Them:** The original snapshot lumped all faculty under "Course Faculty" and assumed full-time tenured professors with abundant research time, completely ignoring the precarious labor of adjunct instructors.
+
+### 🛠️ WHAT WOULD CHANGE IT
+* **Concrete Safeguard:** No AI tool is mandated in any studio section until every adjunct instructor receives 4 hours of paid curriculum training. If training is not funded, the tool remains strictly optional.
+
+---
+
+### The 4 Benchmark Audit Questions
+1. **Whose experience is absent from this snapshot?**  
+   Adjunct faculty without training support; more-than-human ecological entities (the Savannah River Basin); and unborn seventh-generation human descendants of Year 2526 CE.
+2. **Why might the proposed use exclude or burden that person?**  
+   It offloads uncompensated technical support onto adjuncts, drains regional water tables without ecological accountability, and risks locking future humans into flawed socio-ecological systems.
+3. **What change, non-AI option, or test will address the gap?**  
+   Instituting mandatory paid faculty training, a 7th-Generation Proxy Role in peer review, an environmental compute cap, and an explicit Analog Exemption path.
+4. **Who will review the result and decide what changes?**  
+   The SCAD Design for Sustainability Curriculum Committee in consultation with student representatives and community liaisons.
+
+---
+
+## 4. Carry Forward
+* **Documented Concern or Resistance:** Epistemic flattening and students becoming "prompt operators" instead of authentic ecological system designers.
+* **Preliminary Safeguard:** The 10-Minute Socratic Defense & The Analog Exemption: students orally defend systemic mechanisms without screens.
+* **Unresolved Question for the Proposal:** Does algorithmic volatility modeling enhance students' capacity to design for deep-time anti-fragility, or does it tether their thinking to historical training data distributions?

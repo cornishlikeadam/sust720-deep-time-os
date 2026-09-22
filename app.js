@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initDeepTimeSandbox();
   initRoyalExport();
   initStorybookReader();
+  initMilestone1Copy();
 });
 
 // ---------------------------------------------------------
@@ -605,3 +606,61 @@ function initStorybookReader() {
     });
   }
 }
+
+// ---------------------------------------------------------
+// Milestone 1 Copy Handler
+// ---------------------------------------------------------
+function initMilestone1Copy() {
+  const copyBtn = document.getElementById('copy-stakeholder-btn');
+  if (!copyBtn) return;
+
+  const stakeholderMarkdown = `# Stakeholder Snapshot Template (Editable & Plug-and-Play)
+
+## Basic Information
+* **Team:** [Chrono-Relational Studio (Team 04)]
+* **Course Activity:** [Developing a 500-Year Anti-Fragile Regenerative System & Generational Ethics Charter]
+* **Possible AI Use:** [Generating multi-century non-linear climate perturbation wildcards to stress-test system anti-fragility]
+
+## 1. Name the People
+| Position | Named Person or Role in Course | What They Need or Value | Possible Benefit | Risk, Burden, or Concern | Choice, Refusal, or Review Needed | Evidence, Assumption, or Proposed Test |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Users | [M.A. / M.F.A. Sustainable Design Graduate Students] | [Foresight tools, systemic craft, portfolio excellence] | [Rapid stress-testing of 500-yr complex shocks] | [Cognitive deskilling; outsourcing imagination] | [Right to reject AI; 100% analog sketching option] | [Test: Compare analog vs AI project systemic depth] |
+| Decision Makers | [SUST 720 Faculty & Department Chair] | [Academic rigor, authentic student grading] | [More rigorous multi-century models to evaluate] | [Grading synthetic text; instructor burnout] | [Mandatory verbal Socratic oral defense] | [Faculty evaluation of analog concept baselines] |
+| Affected People | [Indigenous Knowledge Keepers & Elders] | [Respectful representation of sacred ontologies] | [Centering deep-time relationality in global design] | [Epistemic extraction; cultural misappropriation] | [Pre-flight elder consultation protocol] | [CARE & OCAP Indigenous Data Sovereignty Protocols] |
+| Excluded / Burdened | [Data Annotators; Savannah River Aquifer; 7th Gen] | [Living wages, clean water, livable future biosphere] | [Visibility of hidden planetary compute costs] | [Aquifer drawdown; inheriting toxic legacy designs] | [Compute water budget cap; 7th-Gen proxy reviewer] | [Crawford Atlas of AI; utility water usage data] |
+
+## 2. Follow One Person Through the Activity
+| Person | What They Encounter | Decision They Can Make | Decision Made About Them | Possible Hidden Labor or Burden | Needed Safeguard |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| User: Elena (Student) | Year +300 coastal salinization shock from tool | Can adopt, alter, or discard the shock | Graded on system's anti-fragile durability | Fact-checking generated climate physics | Tri-Vector Rule: AI must provide 3 rival shocks |
+| Decision Maker: Dr. Marcus (Adjunct) | Evaluating 15 blueprints with AI volatility graphs | Decides if design shows genuine ecological mastery | Evaluated by Chair for grading consistency | Uncompensated hours auditing synthetic text | Standardized 10-minute Socratic verbal defense |
+| Affected: Tasha (Cultural Historian) | Seeing barrier island heritage in student work | Decides if work honors living community memory | Work might reference heritage without consent | Emotional labor correcting naive assumptions | Written community partnership consent covenant |
+| Burdened: Savannah River Aquifer | 1.5M gallons daily drawdown for server cooling | Cannot decide; endures physical drawdown | Students decide compute without water cap | Habitat degradation and thermal salinization | Compute energy and water ledger budget cap |
+
+## 3. Missing-Person Check
+### THE GAP, IN THEIR WORDS
+> "I teach two studio sections as an adjunct on top of my day job. The curriculum added this new algorithmic forecasting tool over the summer, but nobody offered me paid training or asked if it fit our studio timeline. Now on Monday morning, my students are asking me to debug prompt hallucinations, and I'm the one who has to defend their grades during portfolio reviews. I was never in the room when the tool was chosen."
+
+### WHO THEY ARE
+* Denise, Adjunct Studio Instructor (Teaching 2 studio sections).
+
+### WHAT WOULD CHANGE IT
+* No AI tool is mandated in any studio section until every adjunct instructor receives 4 hours of paid curriculum training. If training is not funded, the tool remains strictly optional.
+`;
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(stakeholderMarkdown);
+      const originalText = copyBtn.textContent;
+      copyBtn.textContent = '✅ Copied to Clipboard!';
+      copyBtn.style.background = '#059669';
+      setTimeout(() => {
+        copyBtn.textContent = originalText;
+        copyBtn.style.background = '';
+      }, 2500);
+    } catch (err) {
+      console.error('Clipboard copy failed:', err);
+    }
+  });
+}
+

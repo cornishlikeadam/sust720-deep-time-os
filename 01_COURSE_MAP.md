@@ -6,6 +6,10 @@
 **Core Deliverable:** *The Deep-Time Anti-Fragility Blueprint & Generational Ethics Charter*  
 **Bounded Question:** *How might SCAD graduate sustainable design students use algorithmic superforecasting and ecological perturbation modeling during multi-century scenario planning to design anti-fragile regenerative systems, while embedding a binding Generational Ethics Charter that prevents algorithmic substitution and protects Indigenous epistemic sovereignty?*
 
+> ### 🎯 Learning Goal (Sits at the Top)
+> **Students construct a 500-year anti-fragile regenerative ecological system blueprint and defend a generational ethics charter across seven generations.**  
+> *(Observable, testable action sentence meeting Element 1 of 8).*
+
 ---
 
 ## 1. Visual Course Map: The 5-Step Sequence

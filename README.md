@@ -11,6 +11,7 @@
 ## 🌟 Quick Links
 
 * 🌐 **Live Web Application (Worldwide):** **[https://sust720-deep-time-os.vercel.app](https://sust720-deep-time-os.vercel.app)**
+* 📝 **Milestone 1 Simplified & Editable Hub (Obsidian Synced):** **[`milestone-1/`](./milestone-1/README.md)**
 * 📖 **The Deep Time Storybook (Read like a book for a 10-year-old):** **[`the-deep-time-storybook/`](./the-deep-time-storybook/README.md)**
 * 📜 **Autonomous Agent Governance:** **[`agent.md`](./agent.md)**
 * 🗺️ **Full Milestone 1 Course Map:** **[`01_COURSE_MAP.md`](./01_COURSE_MAP.md)**
@@ -53,6 +54,12 @@ The entire course activity is organized around producing **ONE master deliverabl
 
 ```
 sust720-deep-time-os/
+├── milestone-1/                           # 📝 Simplified & Editable Plug-and-Play Hub (Obsidian Synced)
+│   ├── README.md                          # Folder Guide & Template Index
+│   ├── 00_Milestone_1_Ten_Year_Old_Guide.md # 10-Year-Old Explorer's Field Guide
+│   ├── 01_Stakeholder_Snapshot_Editable.md # Editable Stakeholder Snapshot (Screenshots 11.11.13, 11.11.39, 11.57.04)
+│   ├── 02_Course_Map_Editable.md          # Editable Course Map (Screenshots 11.10.00, 11.10.11, 11.55.13, 11.55.39, 11.55.55)
+│   └── 03_Milestone_1_Unified_Master_Template.md # 2-Page Master Submission Document
 ├── the-deep-time-storybook/               # 📖 The 10-year-old storybook walkthrough
 │   ├── README.md                          # Table of Contents & Map
 │   ├── 00-prologue-what-is-deep-time/     # Chapter 0
